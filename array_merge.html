@@ -7,11 +7,9 @@
 </head>
 <body>
     <script>
-        let data1 =[12,32,43,54,64,76,60]
-        let data2 =[51,85,32,55,85,62,86]
+        let data1 =[12,32,43,54,64,76]
+        let data2 =[51,85,32,55]
         let data3 =[...data1,...data2] // using spread operator       
-        console.log(data3)
-
         for(i=0; i<data1.length;i++){
             data3[i]=data1[i]
         }
@@ -19,6 +17,9 @@
             data3[data1.length+i]=data2[i] 
         }
         console.log(data3)
+
+//19 line of code
+//SC 4
     </script>
     
 </body>
