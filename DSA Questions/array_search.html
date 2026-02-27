@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function searchEL() {
+    let item = Number(document.getElementById("item").value);
+    let val = document.getElementById("val")
+    let arr = [21, 43, 54, 32, 45, 76, 87, 59, 24, 23];
+    let index = undefined;    
+
+    for (let i = 0; i < arr.length; i++) {
+        console.warn(arr[i]);
+
+        if (arr[i] === item) {
+            index = i;
+            break;
+        }
+    }
+
+    if (index !== undefined) {
+        console.log("Element found at index:", index);
+        val.innerText=`The index value of Element ${item} is ${index}`
+    } else {
+        console.log("Element not found");
+        val.innerText=`${item} Element not found in array`
+    }
+
+    //console.log(arr.indexOf(54)); - Built in function
+}
+
+
+
+    </script>
+</head>
+<body>
+    <input type="number" placeholder="Enter Value" id="item">
+    <button onclick="searchEL()">Search</button>
+    <p id="val"></p>
+    
+</body>
+</html>

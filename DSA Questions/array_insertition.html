@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insert Element in Array</title>
+    <script>
+      // let arr = [12,43,53,76,34,54,63,75];
+      // let newEl = 1000;
+      // let position = 2;
+      // console.log(arr);
+
+      // for(let i = arr.length-1; i >= 0; i--){
+      //     // console.warn(arr[i]);
+      //     //
+      //     if(i>=position)
+      //     {
+      //         arr[i+1]=arr[i];
+      //         if(i == position){
+      //             arr[i]=newEl
+      //         }
+      //     }
+      // }
+      // console.warn(arr)
+
+      // let arr = [10,20,30,50];
+      // let newEl = 40;
+      // let position = 3;
+
+      // for(let i = arr.length-1; i>=0; i--){
+      //     console.log(arr[i])
+
+      //     if(i>=position){
+      //         arr[i+1] = arr[i]
+      //         arr[i] =newEl
+      //     }
+      // }
+      // console.log(arr);
+
+      function insertEl() {
+        let arr = [10, 20, 30, 40, 60, 70];
+
+        let newEl = Number(document.getElementById("newel").value);
+        let position = Number(document.getElementById("position").value);
+
+        if (position < 0 || position > arr.length) {
+          alert("Enter a valid position");
+          return;
+        }
+
+        for (let i = arr.length; i > position; i--) {
+          arr[i] = arr[i - 1];
+        }
+
+        arr[position] = newEl;
+
+        console.log(arr);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="number" id="position" placeholder="Enter Position" />
+    <input type="number" id="newel" placeholder="Enter new element Value" />
+    <button onclick="insertEl()">Insert</button>
+  </body>
+</html>

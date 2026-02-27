@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merge Array using While Loop</title>
+    <script>
+      let arr1 = [10,20,30,40,50,60];
+      let arr2 = [5,15,25,35];
+      let arr3 = [];
+
+      let a1 = 0;
+      let a2 = 0;
+      let a3 = 0;
+
+      while(a1< arr1.length && a2< arr2.length){
+        if(arr1[a1] < arr2[a2]){
+          arr3[a3] = arr1[a1]
+          a1++;
+        }
+        else{
+          arr3[a3] = arr2[a2]
+          a2++
+        }
+        a3++;
+      }
+
+      while(a1 < arr1.length){
+        arr3[a3] = arr1[a1]
+        a1++;
+        a3++;
+      }
+
+      while(a2 < arr2.length){
+        arr3[a3] = arr2[a2]
+        a2++;
+        a3++;
+      }
+
+      console.log(arr3);
+      
+      
+
+
+
+// 31 Line of code
+// Sc 6c
+
+      // let data1 = [4, 7, 13, 16, 21, 24]; //length = 6
+      // let data2 = [1, 5, 10, 14, 18, 22, 27, 35, 52]; //length = 9
+      // let data3 = [];
+
+      // let d1 = 0;
+      // let d2 = 0;
+      // let d3 = 0;
+      //                   //6                 //9
+      // while (d1 < data1.length && d2 < data2.length) {
+      //   if (data1[d1] < data2[d2]){
+      //     data3[d3] = data1[d1];
+      //     d1++;
+      //   } else {
+      //     data3[d3] = data2[d2];
+      //     d2++;
+      //   }
+      //   d3++;
+      // }
+
+      // // Add remaining elements of data1
+      // while (d1 < data1.length) {
+      //   data3[d3] = data1[d1];
+      //   d1++;
+      //   d3++;
+      // }
+
+      // // Add remaining elements of data2
+      // while (d2 < data2.length) {
+      //   data3[d3] = data2[d2];
+      //   d2++;
+      //   d3++;
+      // }
+
+      // console.log(data3);
+    </script>
+  </head>
+  <body></body>
+</html>
