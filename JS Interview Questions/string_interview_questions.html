@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Interview Questions</title>
+    <script>
+        let str = "      My name is      Naman"
+        // console.log(str.split())
+        // console.log(...str)
+        // console.log(str.split(''));
+        // console.log(str.replace('name','naam'));
+
+        // get sub string from string 
+        console.log(str.substring(6,10));
+
+        // Remove First element from an Array
+        console.log(str.substring(1,str.length));
+        
+        // Remove the last element from an array
+        console.log(str.substring(0,str.length-1));
+
+        // Remove String before specific character
+        // let temp = str.split('n')
+        // console.log(temp[0]);
+
+        // Reverse an array
+        let temp = str.split('');
+        console.log(temp.reverse().join("").toUpperCase());
+        
+        console.log(str.trim(''));
+    </script>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1{
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Dispaly</h1>
+    
+</body>
+</html>

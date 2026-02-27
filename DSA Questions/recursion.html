@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recusion</title>
+    <script>
+        // function apple(x){
+        //     console.warn(x);
+        //     if(x<10){
+        //         apple(x+1)
+        //     }
+        // }
+        // let data = 1;
+        // apple(data)
+
+        function factorial(x){
+            if(x===0) return 1;
+
+            return x * factorial(x-1)
+        }
+
+        console.log(factorial(5)); // 120
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
